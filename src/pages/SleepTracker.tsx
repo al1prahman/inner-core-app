@@ -21,8 +21,8 @@ export default function SleepTracker() {
     const t = new Date();
     return t.toISOString().slice(0, 10); // yyyy-mm-dd
   });
-  const [records, setRecords] = useState<SleepRecord[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [, setRecords] = useState<SleepRecord[]>([]);
+  const [, setLoading] = useState(true);
   const [sleepPercent, setSleepPercent] = useState<number>(0);
   const [feedback, setFeedback] = useState("Belum ada data tidur");
   const [feedbackEmoji, setFeedbackEmoji] = useState("🛌");

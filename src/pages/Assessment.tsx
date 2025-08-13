@@ -53,24 +53,19 @@ export default function Assessment() {
 
     let status = "";
     let color = "";
-    let motivation = "";
 
     if (percent <= 25) {
       status = "Sehat";
       color = "green";
-      motivation = "Kondisi mental Anda baik, pertahankan pola hidup sehat!";
     } else if (percent <= 50) {
       status = "Cukup";
       color = "yellow";
-      motivation = "Perlu sedikit perhatian pada kesehatan mental Anda.";
     } else if (percent <= 75) {
       status = "Kurang Baik";
       color = "orange";
-      motivation = "Mulailah mengatur waktu dan beristirahat dengan cukup.";
     } else {
       status = "Buruk";
       color = "red";
-      motivation = "Segera cari bantuan atau ceritakan pada orang yang Anda percaya.";
     }
 
     // Simpan hasil ke Firestore
