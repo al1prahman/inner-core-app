@@ -1,4 +1,3 @@
-// src/pages/WeeklyReview.tsx
 import { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { auth, db } from "../services/firebase";
